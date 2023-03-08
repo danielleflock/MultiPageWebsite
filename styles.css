@@ -1,0 +1,88 @@
+header {
+    height: 4rem;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%);
+    overflow: hidden;       
+}
+
+.pagetitle{
+    color: hsl(0, 0%, 100%); 
+    font-size: 2.5rem;   
+    padding: 10 10;
+    margin-left: 15;
+    float: left;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20;
+    margin-bottom: 20;
+    margin-right: .7rem;
+    font-size: 1.5rem;
+    float: right;
+
+    }
+.topnav a:hover {
+    color: aquamarine;
+}
+    
+
+
+link{
+    color: white;
+}
+
+body {
+    background-color: lightgray;
+    margin:0;
+    padding:0;
+}
+
+section {
+    background-color: lightgray;
+    float: left;
+    width: 80.03%;
+}
+
+
+aside {
+    background-color: lightgrey;
+    float: right;
+    width: 19.7%;
+   }
+
+h3 {
+    background-color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 10 0 10 0;
+}
+
+article {
+    padding: 10 10 10 10;
+    display: inline-block;
+    vertical-align: center;
+}
+
+#contact{
+    background-color: rgb(4, 87, 87);
+}
+
+h1.text-center {
+    text-align: center;
+}
+
+input[type=text]{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.644);
+  }
+input[type=email]{
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.644);
+  }
+
+
