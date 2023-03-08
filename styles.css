@@ -65,6 +65,19 @@ article {
     display: inline-block;
     vertical-align: center;
 }
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+.stats{   
+    margin: 15 15; 
+    float: left;
+}
+.table{
+    
+    margin: 15 15;
+    float: right;
+}
 
 #contact{
     background-color: rgb(4, 87, 87);
