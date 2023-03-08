@@ -1,4 +1,5 @@
 header {
+    
     height: 4rem;
     width: 100%;
     background-color: hsl(0, 0%, 0%);
@@ -11,6 +12,10 @@ header {
     padding: 10 10;
     margin-left: 15;
     float: left;
+}
+
+.topnav{
+    margin-right: 10px;
 }
 
 .topnav a {
@@ -69,18 +74,43 @@ h2{
     text-align: center;
     font-size: 30px;
 }
-.stats{   
+section#statistics{
+    font-size: large;
+}
+.stats{  
+    position: absolute;
+    padding-left: 70; 
     margin: 15 15; 
     float: left;
 }
 .table{
-    
+    position: relative;
+    padding-top: 20;
+    padding-right: 70;
     margin: 15 15;
     float: right;
 }
 
-#contact{
-    background-color: rgb(4, 87, 87);
+section.contactUs{
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 50px;
+}
+div #contact{
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    
+}
+div #contact.form{
+    border-radius: 25px;  
+    width: 50%;    
+    display: inline-block;   
+    
 }
 
 h1.text-center {
@@ -88,14 +118,49 @@ h1.text-center {
 }
 
 input[type=text]{
-    padding:10px;
+    border-radius: 25px;
+    padding:10px;    
+    margin: auto;
+    margin-top: 20;
+    margin-bottom: 20;
+    display: flex;    
     border:0;
     box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.644);
   }
 input[type=email]{
+    border-radius: 25px;
     padding:10px;
+    margin: auto;
+    margin-top: 20;
+    margin-bottom: 20;
+    display: flex;
     border:0;
     box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.644);
   }
+
+.question{
+    border-radius: 25px;
+    padding:10px;
+    width: auto;
+    margin: 20 20;
+    display: flex;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.644);
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .btn {
+    border-radius: 12px;
+    font-size: larger;
+    width: auto;    
+    display: flex;
+    margin: auto;
+  }
+
 
 
