@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Contact Us</title>
+
+    <script>
+        function compareEmails(event, myForm) {
+            event.preventDefault();
+            var email1 = myForm.email1.value;
+            var email2 = myForm.email2.value;
+            var errorElement = document.getElementById("email-error");
+            if (email1 !== email2) {
+                errorElement.style.display = "block";
+                return false;
+            } else {
+                errorElement.style.display = "none";
+                return true;
+            }
+        }
+    </script> 
 </head>
 <body>
     <header>
@@ -20,27 +36,22 @@
     <section class="contactUs">
         <div id="contact" class="center form">            
             <h1 class="text-center">Contact Form</h1>
-      
-                
-                <div>
-                    <!-- form fields -->
-                    <form>
-                        <input type="text" class="formFirstName center" placeholder="First Name">
-                        <input type="text" class="formLastName center" placeholder="Last Name">
-                        <input type="email" class="formEmail center" placeholder="Email">
-                        <input type="email" class="formConfirmEmail center" placeholder="Confirm Email">                    
-                        <div class="question center">
-                            <textarea class="form-control center" rows="5" id="question" name="text" placeholder="Enter your question."></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn center">Submit</button>
-                    
-                </div>
-      
-            </div>
-        </div>
-      </section>
 
+            
+            
+            <form class="myForm" action="javascript:void(0);" onSubmit="return compareEmails(event, this);">
+                <input type="text" class="firstName center" placeholder="First Name" name="firstName">
+                <input type="text" class="lastName center" placeholder="Last Name" name="lastName">
+                <input type="email" class="email center" placeholder="Email" name="email1">
+                <input type="email" class="email2 center" placeholder="Confirm Email" name="email2">
+                <div class="question center">
+                    <textarea class="form-control center" rows="5" id="question" name="question" placeholder="Enter your question."></textarea>
+                </div>
+                <div id="email-error" style="display: none;">Emails do not match!</div>
+                <button type="submit" class="btn">Submit</button>
+            </form>     
+        </div>    
+  </section> 
     
 </body>
 </html>
